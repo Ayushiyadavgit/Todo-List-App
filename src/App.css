@@ -1,0 +1,149 @@
+body {
+  background-color: #233142;
+  color: #e3e3e3;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  background: #e3e3e3;
+  color: #233142;
+  padding: 2%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px rgb(30, 30, 30);
+}
+.todo-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #233142;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.todo-input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25px;
+}
+
+.todo-input-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.todo-input-item input {
+  padding: 8px;
+  border: none;
+  width: 250px;
+}
+
+.todo-input-item input:focus {
+  outline: 2px solid #455d7a;
+}
+.primaryBtn {
+  background-color: rgb(5, 167, 91);
+  color: white;
+  border-radius: 0px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+  box-shadow: 0px 5px 7px rgb(164, 164, 164);
+}
+.primaryBtn:hover {
+  background-color: rgb(3, 128, 69);
+}
+.secondaryBtn {
+  background-color: rgb(210, 209, 209);
+  color: #233142;
+  border-radius: 0px;
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: 0px 5px 7px rgb(164, 164, 164);
+}
+.active {
+  background-color: rgb(5, 167, 91);
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.button-area {
+  margin-bottom: 15px;
+}
+.todo-list-item {
+  background-color: rgb(210, 209, 209);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #233142;
+  align-items: center;
+  box-shadow: 0px 5px 7px rgb(164, 164, 164);
+}
+
+.todo-list-item h3 {
+  font-size: 25px;
+  color: rgb(5, 167, 91);
+  margin: 0px;
+}
+.todo-list-item p {
+  margin-top: 14px;
+  color: rgb(5, 167, 91);
+  margin-top: 8px;
+}
+.deleteIcon {
+  font-size: 35px;
+  cursor: pointer;
+}
+.checkIcon {
+  font-size: 25px;
+  margin-left: 10px;
+  color: rgb(5, 167, 91);
+  cursor: pointer;
+}
+.deleteIcon :hover {
+  color: red;
+}
+.checkIcon :hover {
+  color: rgb(3, 128, 69);
+}
+
+.edit_wrapper {
+  background-color: rgb(210, 209, 209);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.edit_wrapper input,
+.edit_wrapper textarea {
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.edit_wrapper .primaryBtn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 16px;
+  width: fit-content;
+}
